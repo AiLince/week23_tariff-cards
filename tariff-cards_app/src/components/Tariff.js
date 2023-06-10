@@ -1,9 +1,9 @@
 import React from "react";
 import "./Tariff.css";
 
-const Tariff = ({ title, price, features, isHighlighted }) => {
+const Tariff = ({ title, price, features, isPriority }) => {
     return (
-    <div className={`tariff ${isHighlighted ? "highlighted" : ""}`}>
+    <div className={`tariff ${isPriority ? "priority" : ""}`}>
         <h2 className="tariff-title">{title}</h2>
         <div className="tariff-price">{price}р/мес</div>
         <ul className="tariff-features">

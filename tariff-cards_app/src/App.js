@@ -11,7 +11,7 @@ export default function App() {
         "до 10 Мбит/сек",
         "Объём включенного трафика не ограничен",
       ],
-      isHighlighted: false
+      isPriority: false
     },
     {
       title: "Безлимитный 450",
@@ -20,7 +20,7 @@ export default function App() {
         "до 50 Мбит/сек",
         "Объём включенного трафика не ограничен",
       ],
-      isHighlighted: false
+      isPriority: false
     },
     {
       title: "Безлимитный 550",
@@ -29,7 +29,7 @@ export default function App() {
         "до 100 Мбит/сек",
         "Объём включенного трафика не ограничен",
       ],
-      isHighlighted: true
+      isPriority: true
     },
     {
       title: "Безлимитный 1000",
@@ -38,7 +38,7 @@ export default function App() {
         "до 200 Мбит/сек",
         "Объём включенного трафика не ограничен",
       ],
-      isHighlighted: false
+      isPriority: false
     },
   ];
 
