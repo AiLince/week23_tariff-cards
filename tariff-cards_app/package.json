@@ -1,8 +1,8 @@
 {
-  "name": "tariff-cards_app",
+  "name": "week23_tariff-cards",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ailince.github.io/tariff-cards_app/",
+  "homepage": "https://ailince.github.io/week23_tariff-cards/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
