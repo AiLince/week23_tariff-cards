@@ -1,0 +1,38 @@
+.tariff {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 300px;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    background-color: rgb(255, 245, 176);
+  }
+  
+  .tariff-title {
+    margin-top: 0;
+  }
+  
+  .tariff-price {
+    font-size: 2rem;
+  }
+  
+  .tariff-features {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .tariff-features li {
+    margin: 10px 0;
+  }
+  
+  .highlighted {
+    background-color: rgb(243, 150, 119);
+    width: 210px;
+    height: 320px;
+  }

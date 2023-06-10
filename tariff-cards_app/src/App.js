@@ -1,25 +1,55 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Tariff from "./components/Tariff";
 
-function App() {
+export default function App() {
+  const tariffs = [
+    {
+      title: "Безлимитный 300",
+      price: 300,
+      features: [
+        "до 10 Мбит/сек",
+        "Объём включенного трафика не ограничен",
+      ],
+      isHighlighted: false
+    },
+    {
+      title: "Безлимитный 450",
+      price: 450,
+      features: [
+        "до 50 Мбит/сек",
+        "Объём включенного трафика не ограничен",
+      ],
+      isHighlighted: false
+    },
+    {
+      title: "Безлимитный 550",
+      price: 550,
+      features: [
+        "до 100 Мбит/сек",
+        "Объём включенного трафика не ограничен",
+      ],
+      isHighlighted: true
+    },
+    {
+      title: "Безлимитный 1000",
+      price: 1000,
+      features: [
+        "до 200 Мбит/сек",
+        "Объём включенного трафика не ограничен",
+      ],
+      isHighlighted: false
+    },
+  ];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Выберите тариф</h1>
+      <div className="tariffs">
+        {tariffs.map((tariff, index) => (
+          <Tariff key={index} {...tariff} />
+        ))}
+      </div>
     </div>
   );
 }
-
-export default App;
