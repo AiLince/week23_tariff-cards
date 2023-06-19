@@ -1,57 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
-import Tariff from "./components/Tariff";
+import Tariff from "./components/Tariff.js";
+import tariffsData from "./components/Tariff.json";
 
 export default function App() {
-  const tariffs = [
-    {
-      title: "Безлимитный 300",
-      price: 300,
-      features: [
-        "до 10 Мбит/сек",
-        "Объём включенного трафика не ограничен",
-      ],
-      isPriority: false,
-      color: "#28c2d6"
-    },
-    {
-      title: "Безлимитный 450",
-      price: 450,
-      features: [
-        "до 50 Мбит/сек",
-        "Объём включенного трафика не ограничен",
-      ],
-      isPriority: false,
-      color: "#198a73"
-    },
-    {
-      title: "Безлимитный 550",
-      price: 550,
-      features: [
-        "до 100 Мбит/сек",
-        "Объём включенного трафика не ограничен",
-      ],
-      isPriority: true,
-      color: "#c4534c"
-    },
-    {
-      title: "Безлимитный 1000",
-      price: 1000,
-      features: [
-        "до 200 Мбит/сек",
-        "Объём включенного трафика не ограничен",
-      ],
-      isPriority: false,
-      color: "#232b34"
-    },
-  ];
+  const tariffs = tariffsData;
+
+  const [activeTariff, setActiveTariff] = useState("");
+  
+  const handleSetActiveTariff = (title) => {
+    setActiveTariff(title);
+  };
 
   return (
     <div className="App">
       <h1>Выберите тариф</h1>
       <div className="tariffs">
         {tariffs.map((tariff, index) => (
-          <Tariff key={index} {...tariff} />
+          <Tariff key={index} {...tariff} isActive={activeTariff === tariff.title}
+          setActive={handleSetActiveTariff}/>
         ))}
       </div>
     </div>
