@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/week23_tariff-cards/static/css/main.11334fae.css",
-    "main.js": "/week23_tariff-cards/static/js/main.9e424b0b.js",
+    "main.css": "/week23_tariff-cards/static/css/main.f289fb27.css",
+    "main.js": "/week23_tariff-cards/static/js/main.71873509.js",
     "static/js/787.2662ea82.chunk.js": "/week23_tariff-cards/static/js/787.2662ea82.chunk.js",
     "index.html": "/week23_tariff-cards/index.html",
-    "main.11334fae.css.map": "/week23_tariff-cards/static/css/main.11334fae.css.map",
-    "main.9e424b0b.js.map": "/week23_tariff-cards/static/js/main.9e424b0b.js.map",
+    "main.f289fb27.css.map": "/week23_tariff-cards/static/css/main.f289fb27.css.map",
+    "main.71873509.js.map": "/week23_tariff-cards/static/js/main.71873509.js.map",
     "787.2662ea82.chunk.js.map": "/week23_tariff-cards/static/js/787.2662ea82.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.11334fae.css",
-    "static/js/main.9e424b0b.js"
+    "static/css/main.f289fb27.css",
+    "static/js/main.71873509.js"
   ]
 }
